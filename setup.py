@@ -3,7 +3,7 @@ from typing import List
 
 HYPEN_E_DOT="-e ."
 
-def get_requirments(file_path:str)->List(str):
+def get_requirments(file_path:str)->List[str]:
     requirments=[]
     with open(file_path) as file_obj:
         requirments=file_obj.readlines()
