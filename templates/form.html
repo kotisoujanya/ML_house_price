@@ -1,5 +1,63 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>universal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+        <style>
+            *{
+               color: #e1e1ec; 
+               background-color: #1b1c38;
+            }
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            form{
+                border: 2px solid #e1e1ec;
+                border-radius: 10px;
+                padding: 50px;
+                margin-top: 2%;
+                background:linear-gradient(#393b6d,#81e6f4)
+                
+            }
+            .button{
+                background-color: #d7ecef;
+                color: #000000;
+                padding: 20px,22px,20px,22px;
+                border-radius: 3px;
+                margin-left: 35%;
+                margin-top: 10px;
+            }
+            .form-group{
+                margin-top: 10px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            input{
+                background-color: #fff;
+                color: #000000;
+            }
+            h1{
+                font-family: 'Orbitron', sans-serif;
+                font-weight: 100;
+            }
+
+        </style>
+    </head>
 <body>
+    <div>
+        <h1>Diamond Price Prediction</h1>
+    </div>
 <form action="{{url_for('predict_datapoint')}}" method="POST">
     <div class="form-group">
         <label for="carat">Carat:</label>
@@ -70,7 +128,7 @@
 </div>
 
 <div style="clear:both;"></div>
-  <input type="submit" value="Submit">
+  <input class="button" type="submit" value="Submit">
 </form>
 </body>
 </html>
